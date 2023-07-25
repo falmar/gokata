@@ -36,9 +36,9 @@ func main() {
 
 	for day := 0; day < days; day++ {
 		fmt.Printf("-------- day %d --------\n", day)
-		fmt.Println("Name, SellIn, Quality")
+		fmt.Println("name, sellIn, quality")
 		for i := 0; i < len(items); i++ {
-			fmt.Println(items[i])
+			fmt.Printf("%s, %d, %d\n", items[i].Name, items[i].SellIn, items[i].Quality)
 		}
 		fmt.Println("")
 		gildedrose.UpdateQuality(items)
