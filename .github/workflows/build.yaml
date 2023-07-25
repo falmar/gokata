@@ -22,8 +22,10 @@ jobs:
 
       - name: Go test
         run: |
+          cd go
           go version
-          go test ./go...
+          go test ./gildedrose -v
+          cd ..
 
       - name: build exec
         env:
